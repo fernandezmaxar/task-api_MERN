@@ -1,0 +1,19 @@
+// 1. Importar el módulo de Express
+const express = require('express');
+
+// 2. Crear una instancia de la aplicación Express
+const app = express();
+
+// 3. Definir el puerto en el que correrá el servidor
+const PORT = 3000;
+
+// 4. Crear una ruta de prueba para asegurarnos de que el servidor funciona
+// Cuando alguien visite la URL raíz ('/'), se enviará esta respuesta.
+app.get('/', (req, res) => {
+  res.send('¡Hola! Mi servidor de API está funcionando.');
+});
+
+// 5. Iniciar el servidor y ponerlo a escuchar en el puerto definido
+app.listen(PORT, () => {
+  console.log(`Servidor Node.js corriendo en el puerto ${PORT}`);
+});
