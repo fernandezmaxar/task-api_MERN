@@ -1,33 +1,17 @@
 {
+  "dependencies": {
+    "express": "^5.1.0"
+  },
   "name": "task-api_mern",
   "version": "1.0.0",
-  "description": "API RESTful para gestión de tareas (MERN Stack)",
-  "main": "server.js",
-  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "bcryptjs": "^3.0.3",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "express-validator": "^7.3.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.19.3"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
-  },
-  "keywords": [
-    "api",
-    "mern",
-    "tasks",
-    "nodejs",
-    "express",
-    "mongodb"
-  ],
-  "author": "fernandezmaxar",
-  "license": "ISC"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
 }
