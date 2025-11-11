@@ -1,7 +1,7 @@
 import express from "express"
 import cors from "cors"
 import authRoutes from "./routes/authRoute.js"
-//import taskRoutes from "./routes/taskRoute.js"
+import taskRoutes from "./routes/taskRoute.js"
 
 const app = express()
 
@@ -13,6 +13,6 @@ app.get("/", (req, res) => {
 })
 
 app.use("/api/auth", authRoutes)
-//app.use("/api/tasks", taskRoutes)
+app.use("/api/tasks", taskRoutes)
 
 export default app
